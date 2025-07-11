@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens - Content Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background-color: #010121;
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .navbar-brand {
+            color: #9c9ce9;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .nav-link {
+            color: azure !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #9c9ce9 !important;
+        }
+
+        .result-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .result-heading {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .bar-container {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            height: 30px;
+        }
+
+        .bar {
+            height: 100%;
+            transition: width 1.5s ease-in-out;
+        }
+
+        .bar.fake {
+            background-color: #FF4C4C;
+        }
+
+        .bar.questionable {
+            background-color: #FFD93D;
+        }
+
+        .bar.real {
+            background-color: #3CCF4E;
+        }
+
+        .bar-label {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+
+        .btn-back {
+            background-color: #9c9ce9;
+            color: #010121;
+            font-weight: bold;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-back:hover {
+            background-color: #7a7acc;
+        }
+
+        @media (max-width: 576px) {
+            .bar-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FactLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new.html">Analyze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="example.html">Fake vs Real</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login-folder/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container result-container">
+            <h2 class="result-heading">Analysis Result</h2>
+            <p>The analysis of your content is shown below:</p>
+
+            <!-- Visual Bar Explanation -->
+            <div class="bar-container">
+                <div class="bar fake" style="width: 40%;"></div>
+                <div class="bar questionable" style="width: 30%;"></div>
+                <div class="bar real" style="width: 30%;"></div>
+            </div>
+
+            <!-- Labels for Explanation -->
+            <div class="row">
+                <div class="col-4">
+                    <p class="bar-label">Fake Content (40%)</p>
+                </div>
+                <div class="col-4">
+                    <p class="bar-label">Questionable Content (30%)</p>
+                </div>
+                <div class="col-4">
+                    <p class="bar-label">Authentic Content (30%)</p>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="goBack()" >Back to Analyze</button>
+        </div>
+    </main>
+
+    <script>
+        // GSAP Animation for the Page
+        gsap.from(".result-container", { opacity: 0, y: 50, duration: 1.5 });
+
+        function goBack() {
+            wi
+        }

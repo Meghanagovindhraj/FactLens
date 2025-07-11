@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #010121;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .navbar-brand {
+            color: #9c9ce9;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .nav-link {
+            color: azure !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #9c9ce9 !important;
+        }
+
+        .login-section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            animation: zoomIn 1s ease;
+        }
+
+        .login-card h2 {
+            color: #9c9ce9;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-size: 1rem;
+            color: whitesmoke;
+        }
+
+        .form-control {
+            background-color: #28284b;
+            color: #fff;
+            border: 1px solid #555;
+        }
+
+        .form-control:focus {
+            border-color: #9c9ce9;
+            box-shadow: 0 0 5px #9c9ce9;
+        }
+
+        .btn-login {
+            background-color: #9c9ce9;
+            color: #010121;
+            font-weight: bold;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login:hover {
+            background-color: #7a7acc;
+            transform: translateY(-3px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .google-btn {
+            background-color: #ffffff;
+            color: #4285F4;
+            font-weight: bold;
+            border: none;
+            padding: 10px 15px;
+            width: 100%;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .google-btn i {
+            margin-right: 10px;
+        }
+
+        .google-btn:hover {
+            background-color: #f1f1f1;
+            transform: translateY(-3px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        footer {
+            background-color: #151540;
+            color: whitesmoke;
+            padding: 10px 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #9c9ce9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FactLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/new.html">Analyze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/feature.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/example.html">Fake vs Real</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="login-section">
+        <div class="login-card">
+            <h2>User Login</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                        required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-login">Login</button>
+                </div>
+            </form>
+            <button class="google-btn" id="googleLoginBtn">
+                <i class="fab fa-google"></i> Sign in with Google
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FactLens. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens - Fake vs Real News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #010121;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .navbar-brand {
+            color: #5a5ac7;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .nav-link {
+            color: #010121 !important;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #9c9ce9 !important;
+        }
+
+        .content-section {
+            padding: 50px 15px;
+        }
+
+        .content-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .news-row {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .news-column {
+            flex: 1;
+            border: 1px solid #9c9ce9;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .news-column h3 {
+            color: #010121;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .news-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .news-description {
+            font-size: 16px;
+            color: #333333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #9c9ce9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FactLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new.html">Analyze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="example.html">Fake vs Real</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login-folder/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <main class="content-section">
+        <h2 class="content-title">Fake News vs Real News</h2>
+
+        <div class="news-row">
+            <!-- Fake News Column -->
+            <div class="news-column">
+                <h3>Fake News</h3>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/80" alt="Fake News Image">
+                    <p class="news-description">"Breaking News: Moon Turns Green Overnight!"</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/80" alt="Fake News Image">
+                    <p class="news-description">"Celebrity Found Living on Mars - Shocking Photos!"</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/80" alt="Fake News Image">
+                    <p class="news-description">"Miracle Pill Cures All Diseases Instantly!"</p>
+                </div>
+            </div>
+
+            <!-- Real News Column -->
+            <div class="news-column">
+                <h3>Real News</h3>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/80" alt="Real News Image">
+                    <p class="news-description">"New Study Highlights Benefits of Regular Exercise."</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/80" alt="Real News Image">
+                    <p class="news-description">"Global Leaders Meet to Discuss Climate Change Solutions."</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/80" alt="Real News Image">
+                    <p class="news-description">"NASA Launches New Telescope to Explore Deep Space."</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 FactLens. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

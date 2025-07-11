@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body{
+            background-color: #010121;
+            background-image: url('bgImg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .navbar-brand {
+            color: #9c9ce9;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .nav-link {
+            color: azure !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #9c9ce9 !important;
+        }
+
+        .hero-section {
+            padding: 100px 0;
+            text-align: center;
+            background-image: url('https://via.placeholder.com/1920x1080');
+            /* Replace with actual background image */
+            background-size: cover;
+            background-position: center;
+            color: whitesmoke;
+            padding-bottom: 240px;
+            margin-top: 60px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #fff;
+            animation: fadeInDown 2s ease;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            animation: fadeInUp 2s ease;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+            animation: fadeIn 2s ease;
+        }
+
+        .btn-primary,
+        .btn-outline-light {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            margin-top: auto;
+            /* Pushes the footer to the bottom of the page */
+            background-color: #151540;
+            color: whitesmoke;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .footer {
+            background-color: #151540;
+            color: whitesmoke;
+            padding: 20px 0;
+            margin-bottom: 0;
+        }
+
+        footer a {
+            color: #9c9ce9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links i {
+            margin-right: 8px;
+        }
+
+        .btn-theme-toggle {
+            background-color: #9c9ce9;
+            color: #010121;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-theme-toggle:hover {
+            background-color: #7a7acc;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FactLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new.html">Analyze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="example.html">Fake vs Real</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login-folder/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <h1 class="hero-title">FactLens: Truth in a Click</h1>
+        <p class="hero-description">We empower individuals and organizations to verify the authenticity of news and
+            media.</p>
+        <div class="cta-buttons">
+            <a href="new.html" class="btn btn-primary">Start Verifying</a>
+            <a href="learmore.html" class="btn btn-outline-light">Learn More</a>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 FactLens. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="footer-links">
+                        <a href="#"><i class="fas fa-envelope"></i> Email Us</a> |
+                        <a href="#"><i class="fas fa-phone"></i> +91 98765 43210</a> |
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Mysore, India</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

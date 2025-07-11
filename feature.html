@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens - Features</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #010121;
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .navbar-brand {
+            color: #9c9ce9;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .nav-link {
+            color: azure !important;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #9c9ce9 !important;
+        }
+
+        .feature-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .feature-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .feature-box:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-box:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .feature-box:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px) scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            color: #9c9ce9;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .feature-description {
+            font-size: 1.2rem;
+            color: #cfd8e0;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .guide-section {
+            background-color: #24244f;
+            padding: 50px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            animation: fadeIn 1.2s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        footer {
+            background-color: #151540;
+            color: whitesmoke;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #9c9ce9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FactLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new.html">Analyze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="example.html">Fake vs Real</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login-folder/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="feature-section container">
+        <h2 class="section-title mb-4 p-4">Features of FactLens</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="feature-title">AI-Powered Verification</div>
+                <div class="feature-description">
+                    FactLens uses advanced AI algorithms to analyze and verify the authenticity of articles, images, and videos, providing you with quick, reliable results.
+                </div>
+            </div>
+            <div class="col-md-4 feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="feature-title">Community Collaboration</div>
+                <div class="feature-description">
+                    Our platform allows users to collaborate and report suspicious content, making it a collective effort to ensure accuracy and trustworthiness.
+                </div>
+            </div>
+            <div class="col-md-4 feature-box">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="feature-title">Global Impact</div>
+                <div class="feature-description">
+                    FactLens has a global reach, allowing users from all over the world to verify information and help curb the spread of misinformation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="guide-section container">
+        <h2>How to Use FactLens</h2>
+        <p>Getting started with FactLens is simple. Here’s how you can use the platform:</p>
+        <ol>
+            <li><strong>Choose a File or Link:</strong> Upload images, articles, or videos for verification or simply paste a URL.</li>
+            <li><strong>Content Type:</strong> Select whether you're analyzing an article, image, or video to ensure accurate processing.</li>
+            <li><strong>Instant Feedback:</strong> Once the content is processed, receive detailed results about its authenticity.</li>
+            <li><strong>Contribute to the Community:</strong> Flag any suspicious content you come across to help others stay informed.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FactLens. All rights reserved.</p>
+            <p>
+                <a href="#"><i class="fas fa-envelope"></i> Email Us</a> |
+                <a href="#"><i class="fas fa-phone"></i> +91 98765 43210</a> |
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Mysore, India</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Add staggered fade-in animations for guide section
+        document.addEventListener("DOMContentLoaded", () => {
+            const guideSection = document.querySelector(".guide-section");
+            setTimeout(() => {
+                guideSection.style.opacity = "1";
+            }, 800);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #010121;
+           
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .navbar-brand {
+            color: #9c9ce9;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .nav-link {
+            color: azure !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #9c9ce9 !important;
+        }
+
+        .hero-section {
+            padding: 100px 0;
+            text-align: center;
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with actual background image */
+            background-size: cover;
+            background-position: center;
+            color: whitesmoke;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #fff;
+            animation: fadeInDown 2s ease;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-top: 15px;
+            animation: fadeInUp 2s ease;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+            animation: fadeIn 2s ease;
+        }
+
+        .btn-primary, .btn-outline-light {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .why-verify {
+            background-color: #151540;
+            padding: 50px 20px;
+            /* margin: 30px 0; */
+            border-radius: 10px;
+        }
+
+        .why-verify h2 {
+            color: #9c9ce9;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .why-verify p {
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #9c9ce9;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box {
+            background-color: rgba(156, 156, 233, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+
+        .cta {
+            text-align: center;
+            background-color: #9c9ce9;
+            padding: 40px 20px;
+            border-radius: 10px;
+            color: #010121;
+            margin-top: 40px;
+        }
+
+        .feature-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .feature-card {
+            background-color: #151540;
+            border-radius: 10px;
+            padding: 30px;
+            color: whitesmoke;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: #9c9ce9;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #151540;
+            color: whitesmoke;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #9c9ce9;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links i {
+            margin-right: 8px;
+        }
+
+        .btn-theme-toggle {
+            background-color: #9c9ce9;
+            color: #010121;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-theme-toggle:hover {
+            background-color: #7a7acc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FactLens</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new.html">Analyze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feature.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="example.html">Fake vs Real</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login-folder/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <header class="hero-section">
+        <h1 class="hero-title">FactLens: Truth in a Click</h1>
+        <p class="hero-description">We empower individuals and organizations to verify the authenticity of news and media.</p>
+        <div class="cta-buttons">
+            <a href="new.html" class="btn btn-primary">Start Verifying</a>
+            <a href="#about" class="btn btn-outline-light">Learn More</a>
+        </div>
+    </header> -->
+
+    <section id="verify" class="why-verify container py-5">
+        <h2>Why Verify?</h2>
+        <p>Misinformation can spread like wildfire, leading to confusion, fear, and mistrust. FactLens allows you to stay informed and make decisions based on accurate information. Verify images, videos, and text with AI-powered analysis and build a more trustworthy digital world.</p>
+    </section>
+
+    <section class="container py-5" id="why-us">
+        <h2 class="section-title">Why Choose FactLens?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="info-box text-center p-4">
+                    <i class="fas fa-brain fa-3x mb-3"></i>
+                    <h5>AI-Powered Verification</h5>
+                    <p>Our cutting-edge AI analyzes content in real-time to detect fake news, doctored images, and deepfakes.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box text-center p-4">
+                    <i class="fas fa-users fa-3x mb-3"></i>
+                    <h5>Community-Driven Reporting</h5>
+                    <p>Report questionable content and help create a trustworthy online environment for everyone.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box text-center p-4">
+                    <i class="fas fa-globe fa-3x mb-3"></i>
+                    <h5>Global Impact</h5>
+                    <p>Join a movement to reduce misinformation's harmful effects on society, one click at a time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5" id="how-fake-news">
+        <h2 class="section-title">How Fake News Spreads Rapidly</h2>
+        <p class="text-center">
+            Fake news spreads like wildfire due to our growing reliance on social media and instant communication platforms. Here's how:
+        </p>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="info-box p-4">
+                    <h5>1. Emotional Content</h5>
+                    <p>Fake news often appeals to emotions like fear, anger, or excitement, making it more likely to be shared.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-box p-4">
+                    <h5>2. Algorithms</h5>
+                    <p>Social media algorithms prioritize engaging content, unintentionally amplifying fake stories.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-box p-4">
+                    <h5>3. Lack of Verification</h5>
+                    <p>Many users share stories without checking their authenticity, allowing fake news to thrive.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-box p-4">
+                    <h5>4. Bot Networks</h5>
+                    <p>Automated bots amplify fake news, making it appear more credible and widespread.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta container my-5" id="how-to-stop">
+        <h2>How You Can Stop the Spread</h2>
+        <p>Everyone has a role in combating fake news. Here's how you can help:</p>
+        <ul class="text-start">
+            <li><strong>Think Before Sharing:</strong> Verify the source and content before sharing any news.</li>
+            <li><strong>Use FactLens:</strong> Upload articles, images, and videos for instant analysis and verification.</li>
+            <li><strong>Report Fake News:</strong> Use reporting tools on social media to flag misleading posts.</li>
+            <li><strong>Educate Others:</strong> Share awareness about the dangers of misinformation with friends and family.</li>
+        </ul>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 FactLens. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="footer-links">
+                        <a href="#"><i class="fas fa-envelope"></i> Email Us</a> |
+                        <a href="#"><i class="fas fa-phone"></i> +91 98765 43210</a> |
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> Mysore, India</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
